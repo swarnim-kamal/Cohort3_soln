@@ -1,0 +1,121 @@
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+.navbar{
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;               
+    left: 0;              
+    width: 100vw;              
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1e1a24;
+    width: 100vw;
+    height: 12vh;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 1px 7vw 1px 7vw;
+    border-bottom: 2px solid #1e1a24;
+}
+
+
+.navbar button{
+    color:rgb(189, 189, 189);
+    border: none;                  
+    background: transparent;                          
+    font: inherit;                  
+    cursor: pointer;               
+    padding: 3px;
+}
+
+.navbar .part1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.navbar .option button:hover{
+    color:white;
+}
+
+.navbar .part2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.navbar .part2 img{
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+.navbar .part2 .mode:hover{
+    background-color: #c1c0c7;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.navbar .part2 .mode:hover img{
+    filter: invert(0%);
+}
+
+.navbar .part2 .special-option{
+    background-color: #007ea7;
+    border-radius: 3px;
+    padding: 9px;
+    height: 3vh;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .part2 .special-option:hover{
+    background-color: #00365a;
+}
+
+.navbar .part2 .search-bar{
+    display: flex;
+    justify-content: space-between; /* pushes left/right to ends */
+    align-items: center;
+    padding: 9px;
+    height: 3vh;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    width: 20vw; 
+} 
+.navbar .part2 .search-bar .shortcut{
+    color: #b2b2b2;
+}
+
+.navbar .part2 .search-bar:hover{
+     background-color: #39373D;
+} 
+
+.main-content{
+
+}
+
+    

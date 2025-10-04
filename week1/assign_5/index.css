@@ -1,0 +1,32 @@
+.container{
+    width: 1200px;
+    height: 400px;
+    background-color: black;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    height: 1200px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    margin: 10px; 
+    color: whitesmoke          
+}
+img {
+    width: 15px;
+    height: 15px;
+}
+.col{
+    width: 150px;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:5px;
+    margin: 5px;
+}
+.col1{
+    width: 400px;
+    height: 200px;
+    padding:5px;
+    margin: 5px;
+}
