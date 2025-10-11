@@ -11,8 +11,7 @@ body{
 .navbar{
     position: fixed;
     top: 0;               
-    left: 0;              
-    width: 100vw;              
+    left: 0;                            
     display:flex;
     justify-content: space-between;
     flex-direction: row;
@@ -21,9 +20,9 @@ body{
     width: 100vw;
     height: 12vh;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 2.5vh;
     color: whitesmoke;
-    padding: 1px 7vw 1px 7vw;
+    padding: 1px 4vw 1px 4vw;
     border-bottom: 2px solid #1e1a24;
 }
 
@@ -41,7 +40,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 2.5vh;
 }
 
 .navbar-heading{
@@ -49,7 +48,7 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    font-size: 30px;
+    font-size: 3vh;
     color: whitesmoke;
 }
 
@@ -65,8 +64,8 @@ body{
 }
 
 .navbar .part2 img{
-    width: 20px;
-    height: 20px;
+    width: 2.5vh;
+    height: 2.5vh;
     filter: invert(100%);
 }
 
@@ -85,7 +84,7 @@ body{
     border-radius: 3px;
     padding: 9px;
     height: 3vh;
-    font-size: 20px;
+    font-size: 2.5vh;
     font-weight: bold;
     cursor: pointer;
 }
@@ -100,7 +99,7 @@ body{
     align-items: center;
     padding: 9px;
     height: 3vh;
-    font-size: 20px;
+    font-size: 2.5vh;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid #e3e3e3;
@@ -115,7 +114,272 @@ body{
 } 
 
 .main-content{
-
+    background-color:#0D1117;
+    display:flex;
+    width: 100vw;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 2.5vh;
+    color: whitesmoke;
+    padding: 1px 4vw 1px 4vw;
+    margin-top: 12vh;
 }
 
-    
+.main-content .head-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh
+}
+
+.main-content .head-content .heading{
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.head-content .center-image img{
+  display: block;
+  max-width: 1000px;   /* cap the size */
+  width: 100%;         /* responsive */
+  height: auto;
+  border-radius: 8px;  /* optional, for polish */
+}
+
+/* If you intended to size the Linux logo image, use img (not .img) */
+.main-content .attention .col-item-attention .item1 img{
+  width: 24px;
+  height: 24px;
+}
+
+/* attention box styling */
+.head-content .attention{
+  background: #151a20;           /* lighter than #0D1117 */
+  border: 1px solid #2a2f36;
+  border-radius: 10px;
+  padding: 14px 18px;
+  width: 100%;
+  max-width: 1100px;             /* keeps it neat on large screens */
+  margin-top: 8px;
+}
+
+/* layout inside attention so item1 and item2 sit nicely */
+.head-content .attention .col-item-attention{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+/* make the whole item1 look like a pill button */
+.head-content .attention .col-item-attention .item1{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+    color: #111;                        
+    border: 2px solid transparent;      
+    cursor: pointer;                    
+    transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;            /* a bit bigger */
+}
+
+/* ensure the text has no extra margins */
+.head-content .attention .col-item-attention .item1 p{ 
+  margin: 0;
+}
+
+/* if your linux logo is dark, turn it white; remove this line if not needed */
+.head-content .attention .col-item-attention .item1 img{
+  width: 24px; height: 24px;
+  filter: invert(100%);
+}
+
+/* smaller, muted text for item2 */
+.head-content .attention .col-item-attention .item2{
+  font-size: 0.85rem;
+  color: #cfcfcf;
+}
+
+/* remove underline on links and keep color subtle */
+.head-content .attention .col-item-attention .item2 a{
+  text-decoration: none;
+  color: #cfcfcf;
+}
+
+/* optional: show underline only on hover */
+.head-content .attention .col-item-attention .item2 a:hover{
+  text-decoration: underline;
+}
+
+/* small vertical spacing between the two lines in item2 */
+.head-content .attention .col-item-attention .item2 .first,
+.head-content .attention .col-item-attention .item2 .second{
+  margin-top: 4px;
+}
+
+
+.head-content .attention{
+  width: min(100%, 500px);
+  margin-inline: auto;         /* center it */
+}
+
+.head-content .attention .col-item-attention .item1 p{ margin: 0; }
+.head-content .attention .col-item-attention .item1 img{
+  width: 24px; height: 24px;
+  filter: none;                       /* keep original icon colors on light bg */
+}
+
+/* 4) item1 hover: surround with white border */
+.head-content .attention .col-item-attention .item1:hover,
+.head-content .attention .col-item-attention .item1:focus-visible{
+  border-color: #232222;
+  box-shadow: 0 0 0 2px #fff;         /* visible ring around it */
+}
+
+/* 5) item2 content centered */
+.head-content .attention .col-item-attention{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+.head-content .attention .col-item-attention .item2{
+  text-align: center;                 /* center the text lines */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Keep item2 links small and un-underlined (from your prior rules) */
+.head-content .attention .col-item-attention .item2{
+  font-size: 0.85rem;
+  color: #cfcfcf;
+}
+.head-content .attention .col-item-attention .item2 a{
+  text-decoration: none;
+  color: #cfcfcf;
+}
+.head-content .attention .col-item-attention .item2 a:hover{
+  text-decoration: underline;
+}
+
+/* col-item layout */
+.col-item{
+    display: flex;
+    width : 100%;
+    justify-content: space-evenly;
+    margin : 40px;
+    padding : 13px;
+    color: #9ba3b4;  
+}
+
+.col-item img{
+   width: 20vw; 
+   height: auto; 
+}
+
+.col-item .item1,
+.col-item .item2,
+.col-item .item3
+{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    width : 22%;
+    height: auto;
+    border: 0.5px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 2.75vh;
+    cursor: pointer;
+    background-color: #23282F;
+}
+
+.col-item .item1 h2,
+.col-item .item2 h2,
+.col-item .item3 h2
+{
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.partition-bar{
+    display: flex;
+    flex-direction: row;
+    /* align-items : center; */
+    justify-content: space-between;
+    padding : 20px;
+    width: 80%;
+    height: 40%;
+    background-color: #1b2129;
+    background: #97bfa8;
+    background: linear-gradient(90deg,rgba(151, 191, 168, 1) 0%, rgba(39, 41, 140, 1) 50%, rgba(10, 2, 43, 1) 100%);
+    margin: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(211, 210, 210);
+}
+
+.partition-bar .item1{
+    font-size: 18px;
+    font-weight: bold;;
+}
+
+.partition-bar .item2{
+  font-size: 14px;
+}
+.partition-bar .item2 button{
+    background-color: #2b3139;
+    border-radius: 3px;
+    border: 0.5px solid rgb(211, 210, 210);
+    padding: 10px;
+    color:  whitesmoke;
+    cursor: pointer;
+}
+
+.partition-bar .item2 button:hover{
+    background-color: #454d58;
+}
+
+.body-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items : center;
+  gap : 30px;
+}
+
+.body-item .item1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  padding: 20px;
+  width: 80%;
+  align-items : center;
+  gap: 40px;
+}
+
+.body-item .item1 .text{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 30%;
+  font-size: larger;
+}
+
+.body-item .item1 img {
+  width : 80%;
+}
+
+
+
+
+
+
+
+
+
