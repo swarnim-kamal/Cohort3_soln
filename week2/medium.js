@@ -44,3 +44,7 @@ function calculateTime(n) {
 n = 100000000000
 
 console.log(calculateTime(n))
+
+
+module.exports = countVowels
+module.exports = isPalindrome
