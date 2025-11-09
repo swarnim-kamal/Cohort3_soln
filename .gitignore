@@ -1,0 +1,18 @@
+# ignoring node modules
+node_modules/
+
+
+# removing lock files
+*/package-lock.json
+*/yarn.lock
+
+# ignoring json and jsonl files
+*.json
+*.jsonl
+
+
+#ignoring image files
+*.png
+*.jpg 
+*.jpeg
+
