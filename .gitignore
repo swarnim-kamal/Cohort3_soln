@@ -2,9 +2,13 @@
 node_modules/
 
 
+
 # removing lock files
 */package-lock.json
 */yarn.lock
+
+# ignoring .txt files
+*.txt
 
 # ignoring json and jsonl files
 *.json
